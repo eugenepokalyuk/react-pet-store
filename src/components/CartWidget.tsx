@@ -62,7 +62,7 @@ const groupCartItems = (cartItems: number[]): { category: string; items: { id: s
     const groupedItems: { category: string; items: { id: string; name: string; price: number; quantity: number }[] }[] = [];
 
     cartItems.forEach((itemId) => {
-        const item = products.find((product) => product.id === itemId);
+        const item: any = products.find((product: any) => product.id === itemId);
         if (item) {
             const categoryIndex = groupedItems.findIndex((group) => group.category === item.category);
             if (categoryIndex === -1) {

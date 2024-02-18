@@ -4,12 +4,13 @@ import { useParams } from 'react-router-dom';
 import productsData from '../data/products.json';
 import { Product } from '../types';
 
-const getProductById = (productId: string): Product | undefined => {
+// Product | undefined
+const getProductById = (productId: string): any => {
     return productsData.products.find(product => product.id.toString() === productId);
 };
 
 const ProductDetailsPage: React.FC = () => {
-    const { productId } = useParams<{ productId: string }>();
+    const { productId }: any = useParams<{ productId: string }>();
     const product: Product | undefined = getProductById(productId);
 
     if (!product) {

@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import cartReducer from './cart';
 import { productsReducer } from './product';
 
-const rootReducer = combineReducers({
+const rootReducer: any = combineReducers({
     products: productsReducer,
     cart: cartReducer
 });

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import products from '../../data/products.json';
 import { useAppDispatch } from '../../hooks';
 import ErrorPage from '../../pages/ErrorPage';
@@ -15,12 +15,12 @@ import { Header } from '../Header';
 const App: React.FC = () => {
   const dispatch = useAppDispatch();
   const location = useLocation();
-  const navigate = useNavigate();
-  const [loading, isLoading] = useState<boolean>(false);
+  const [loading, ] = useState<boolean>(false);
   const background = location.state && location.state.background;
 
   useEffect(() => {
-    dispatch(fetchProductsSuccess(products.products))
+    const productList: any = products.products;
+    dispatch(fetchProductsSuccess(productList))
   }, []);
 
   const [bannerVisible, setBannerVisible] = useState<boolean>(true);
