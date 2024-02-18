@@ -1,0 +1,204 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "Бирка для питомца",
+            "category": "Gucci",
+            "price": 230,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1664296249/692966_J160G_0812_001_100_0000_Light--G.jpg"
+        },
+        {
+            "id": "2",
+            "name": "Миска для питомца",
+            "category": "Gucci",
+            "price": 580,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1694538102/749640_ZAJH5_3570_001_080_0000_Light--Herbarium.jpg"
+        },
+        {
+            "id": "3",
+            "name": "Переноска для питомца",
+            "category": "Gucci",
+            "price": 4050,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1656336603/692958_2ZGKG_8745_001_088_0000_Light--GG-Web.jpg"
+        },
+        {
+            "id": "4",
+            "name": "Поводок для питомца",
+            "category": "Gucci",
+            "price": 350,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1690877793/695256_2ZGHG_8367_001_100_0000_Light-.jpg"
+        },
+        {
+            "id": "5",
+            "name": "Поводок для питомца",
+            "category": "Gucci",
+            "price": 345,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1655463603/695256_UTVAG_8742_001_100_0000_Light-.jpg"
+        },
+        {
+            "id": "6",
+            "name": "Поводок для питомца",
+            "category": "Gucci",
+            "price": 410,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1655466312/692947_UW4AG_8367_001_100_0067_Light-.jpg"
+        },
+        {
+            "id": "7",
+            "name": "Поводок для питомца",
+            "category": "Dior",
+            "price": 550,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://www.dior.com/couture/ecommerce/media/catalog/product/J/y/1683207937_4603RUYKY_H03E_E01_GHC.jpg?imwidth=3840"
+        },
+        {
+            "id": "8",
+            "name": "Переноска для питомца",
+            "category": "Dior",
+            "price": 3300,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://www.dior.com/couture/ecommerce/media/catalog/product/u/V/1682351131_1ESDU035CDP_H42E_E01_GHC.jpg?imwidth=3840"
+        },
+        {
+            "id": "9",
+            "name": "Переноска для питомца",
+            "category": "Dior",
+            "price": 3200,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://www.dior.com/couture/ecommerce/media/catalog/product/S/Z/1683207939_1ESDU035YKU_H27E_E01_GHC.jpg?imwidth=3840"
+        },
+        {
+            "id": "10",
+            "name": "Шлейка для питомца",
+            "category": "Dior",
+            "price": 770,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://www.dior.com/couture/ecommerce/media/catalog/product/d/w/1685958334_4601RUYKY_H27E_E03_GHC.jpg?imwidth=3840"
+        },
+        {
+            "id": "11",
+            "name": "Поводок для питомца",
+            "category": "Louis Vuitton",
+            "price": 425,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-collar-xs-monogram-canvas-trunks-and-travel--M80339_PM2_Front%20view.png?wid=1440&hei=1440"
+        },
+        {
+            "id": "12",
+            "name": "Переноска для питомца",
+            "category": "Louis Vuitton",
+            "price": 5550,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-dog-bag-monogram-canvas-trunks-and-travel--M45662_PM2_Front%20view.png?wid=1440&hei=1440"
+        },
+        {
+            "id": "13",
+            "name": "Одеяло для питомца",
+            "category": "Louis Vuitton",
+            "price": 2390,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neo-monogram-blanket-s00-home-textile--M70439_PM2_Front%20view.png?wid=1440&hei=1440"
+        },
+        {
+            "id": "14",
+            "name": "Поводок для питомца",
+            "category": "Valentino",
+            "price": 350,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://valentino-cdn.thron.com/delivery/public/image/valentino/1d4aea77-44cd-4814-b231-a4264e3114f8/ihqstx/std/2000x0/VALENTINO-GARAVANI-ROCKSTUD-PET-LEASH?quality=80&size=35&format=auto"
+        },
+        {
+            "id": "15",
+            "name": "Поводок для питомца",
+            "category": "Miu Miu",
+            "price": 495,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://www.miumiu.com/content/dam/miumiu_products/5/5YC/5YC021/2D5HF0522/5YC021_2D5H_F0522_SLF.png/jcr:content/renditions/cq5dam.web.hE7E3DA.2000.2000.jpg"
+        },
+        {
+            "id": "16",
+            "name": "Поводок для питомца",
+            "category": "Bottega Veneta",
+            "price": 890,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://bottega-veneta.dam.kering.com/m/299835c27c5289cb/Large-779722V3VF02231_A.jpg?v=2"
+        },
+        {
+            "id": "17",
+            "name": "Поводок для питомца",
+            "category": "Prada",
+            "price": 460,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://www.prada.com/content/dam/pradabkg_products/2/2YC/2YC011/2DMIF0002/2YC011_2DMI_F0002_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.2000.2000.jpg"
+        },
+        {
+            "id": "18",
+            "name": "Поводок для питомца",
+            "category": "Burberry",
+            "price": 380,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://assets.burberry.com/is/image/Burberryltd/C47AF774-EEB2-491C-BF08-9B5160BB61F5?$BBY_V3_SL_1$&wid=2500&hei=2500"
+        },
+        {
+            "id": "19",
+            "name": "Переноска для питомца",
+            "category": "Dolce&Gabbana",
+            "price": 3545,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://www.dolcegabbana.com/dw/image/v2/BKDB_PRD/on/demandware.static/-/Sites-15/default/dw011cc69b/images/zoom/BB6828AW384_HYNBM_0.jpg"
+        },
+        {
+            "id": "20",
+            "name": "Поводок для питомца",
+            "category": "Giorgio Armani",
+            "price": 210,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://www.armani.com/variants/images/1647597336146849/F/w800.jpg"
+        },
+        {
+            "id": "21",
+            "name": "Сумка для питомца",
+            "category": "Giorgio Armani",
+            "price": 250,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://www.armani.com/variants/images/1647597336146010/F/w800.jpg"
+        },
+        {
+            "id": "22",
+            "name": "Одежда для питомца",
+            "category": "Giorgio Armani",
+            "price": 295,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://www.armani.com/variants/images/1647597336146847/F/w800.jpg"
+        },
+        {
+            "id": "23",
+            "name": "Пуфик для питомца",
+            "category": "Hermes",
+            "price": 5450,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://assets.hermes.com/is/image/hermesproduct/patapouf-dog-bed-large-model--800688E%2001-front-wm-2-0-0-800-800_g.jpg"
+        },
+        {
+            "id": "24",
+            "name": "Сумка для питомца",
+            "category": "Hermes",
+            "price": 2675,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://assets.hermes.com/is/image/hermesproduct/carrying-bag-for-dogs--800639EK01-front-2-300-0-800-800_g.jpg"
+        },
+        {
+            "id": "25",
+            "name": "Одеяло для питомца",
+            "category": "Hermes",
+            "price": 580,
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "image": "https://assets.hermes.com/is/image/hermesproduct/rocabar-blanket-large-model--800511E%2001-flat-1-300-0-800-800_g.jpg"
+        }
+    ]
+}
