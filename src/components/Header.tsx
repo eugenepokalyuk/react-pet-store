@@ -14,7 +14,7 @@ export const Header: FC<HeaderProps> = ({ isScrolled }) => {
                 <Grid columns='2' className="justify-center">
                     <Flex className="justify-start">
                         <Link to={DEFAULT_PATH} className="flex items-center">
-                            <Logo className="h-9 mr-2 md:mr-0" />
+                            <Logo className="h-9 mr-4" />
                             {/* className="h-6 sm:h-9"  */}
                             <span className={`self-center text-xl font-semibold whitespace-nowrap ${isScrolled ? 'text-black' : 'text-black'}`}>Pokalyuk Store</span>
                         </Link>
