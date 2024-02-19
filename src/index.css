@@ -1,6 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html {
+    background: #F4F2F0;
+}
+
+section {
+    background: #F4F2F0;
+}
 
 .squiggle {
     stroke-dasharray: 450;
@@ -23,4 +39,22 @@
 .header-not-scrolled {
     transition: 300ms;
     background: #85714D;
+}
+
+.cart-widget {
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.cart-widget::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: 3%;
+    transform: translateX(50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #85714D transparent;
+    /* border-color: transparent transparent #fff transparent; */
+    rotate: 180deg;
 }

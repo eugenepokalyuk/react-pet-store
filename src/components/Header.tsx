@@ -7,14 +7,13 @@ interface HeaderProps {
     isScrolled: boolean;
 }
 export const Header: FC<HeaderProps> = ({ isScrolled }) => {
-    console.log('isScrolled', isScrolled);
     return (
-        <header className={`fixed w-full z-10 ${isScrolled ? 'header-scrolled' : 'header-not-scrolled'}`}>
+        <header className={`fixed top-0 w-full z-10 ${isScrolled ? 'header-scrolled' : 'header-not-scrolled'}`}>
             <nav className="border-gray-200 px-4 lg:px-6 py-6">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Link to={DEFAULT_PATH} className="flex items-center">
                         <Logo className="mr-3 h-6 sm:h-9" />
-                        {/* <span className={`self-center text-xl font-semibold whitespace-nowrap ${isScrolled ? 'text-black' : 'text-white/0'}`}>Pokalyuk Store</span> */}
+                        <span className={`self-center text-xl font-semibold whitespace-nowrap ${isScrolled ? 'text-black' : 'text-black'}`}>Pokalyuk Store</span>
                     </Link>
                     <div className="flex items-center lg:order-2">
                         <Link

@@ -5,9 +5,10 @@ import products from '../../data/products.json';
 import { useAppDispatch } from '../../hooks';
 import ErrorPage from '../../pages/ErrorPage';
 import HomePage from '../../pages/HomePage';
+import { PaymentPage } from '../../pages/PaymentPage';
 import ProductDetailsPage from '../../pages/ProductDetailsPage';
 import { fetchProductsSuccess } from '../../store/actions/actions';
-import { DEFAULT_PATH, ERROR_PATH, PRODUCT_PATH } from '../../utils/routePath';
+import { DEFAULT_PATH, ERROR_PATH, PAYMENT_PATH, PRODUCT_PATH } from '../../utils/routePath';
 import { CartWidget } from '../CartWidget';
 import { Header } from '../Header';
 
@@ -15,7 +16,7 @@ import { Header } from '../Header';
 const App: React.FC = () => {
   const dispatch = useAppDispatch();
   const location = useLocation();
-  const [loading, ] = useState<boolean>(false);
+  const [loading,] = useState<boolean>(false);
   const background = location.state && location.state.background;
 
   useEffect(() => {
@@ -41,11 +42,14 @@ const App: React.FC = () => {
     <>
       <Header isScrolled={bannerVisible} />
       {!loading ? (
-        <Routes location={background || location}>
-          <Route path={DEFAULT_PATH} element={<HomePage forwardRef={ref} />} />
-          <Route path={PRODUCT_PATH} element={<ProductDetailsPage />} />
-          <Route path={ERROR_PATH} element={<ErrorPage />} />
-        </Routes>
+        <main className='bg-[#F4F2F0]'>
+          <Routes location={background || location}>
+            <Route path={DEFAULT_PATH} element={<HomePage forwardRef={ref} />} />
+            <Route path={PRODUCT_PATH} element={<ProductDetailsPage />} />
+            <Route path={PAYMENT_PATH} element={<PaymentPage />} />
+            <Route path={ERROR_PATH} element={<ErrorPage />} />
+          </Routes>
+        </main>
       ) : (
         <>Загрузка</>
       )}

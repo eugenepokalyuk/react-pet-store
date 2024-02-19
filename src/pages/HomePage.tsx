@@ -67,32 +67,30 @@ const HomePage: FC<HomePageProps> = ({ forwardRef }) => {
     const remainingProducts: any = Array.isArray(products) ? products.slice(8) : [];
 
     return (
-        <main className='pt-[6rem]'>
-            <section>
-                <article className='container mx-auto mt-4' ref={forwardRef}>
-                    <h1 className='uppercase text-[34px] md:text-[72px] text-center'>From the fashon show</h1>
-                </article>
+        <section className='mt-[6rem]'>
+            <article className='container mx-auto mt-4' ref={forwardRef}>
+                <h1 className='uppercase text-[34px] md:text-[72px] text-center'>From the fashon show</h1>
+            </article>
 
-                <article className='container mx-auto mt-4'>
-                    <ProductList products={first20Products} />
-                </article>
+            <article className='container mx-auto mt-4'>
+                <ProductList products={first20Products} />
+            </article>
 
-                <article className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
-                    <PhotoGallery />
-                </article>
+            <article className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
+                <PhotoGallery />
+            </article>
 
-                <article className='container mx-auto mt-4'>
-                    <ProductList products={remainingProducts} />
-                </article>
+            <article className='container mx-auto mt-4'>
+                <ProductList products={remainingProducts} />
+            </article>
 
-                <article className="hidden bg-fixed w-full h-screen bg-no-repeat md:block" style={{ backgroundImage: `url(${Billboard})` }}>
-                </article>
+            <article className="hidden bg-fixed w-full h-screen bg-no-repeat md:block" style={{ backgroundImage: `url(${Billboard})` }}>
+            </article>
 
-                <article>
-                    <Logo />
-                </article>
-            </section>
-        </main>
+            <article>
+                <Logo />
+            </article>
+        </section>
     );
 };
 
