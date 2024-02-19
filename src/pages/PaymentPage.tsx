@@ -1,4 +1,4 @@
-import { Card, Grid } from "@radix-ui/themes";
+import { Card } from "@radix-ui/themes";
 import { FC, useState } from "react";
 import { Link } from "react-router-dom";
 import { calculateTotal, groupCartItems } from "../components/CartWidget";
@@ -35,28 +35,6 @@ export const PaymentPage: FC<PaymentPageProps> = () => {
         setCardNumber(e.target.value);
     };
 
-    // const handlePayment = () => {
-    //     if (!email) {
-    //         alert("Please enter your email");
-    //         return;
-    //     }
-    //     if (!paymentMethod) {
-    //         alert("Please select a payment method");
-    //         return;
-    //     }
-    //     if (paymentMethod === "online") {
-    //         const cardNumberInput = document.getElementById("card_number") as HTMLInputElement;
-    //         const expDateInput = document.getElementById("exp_date") as HTMLInputElement;
-    //         const cvvInput = document.getElementById("cvv") as HTMLInputElement;
-
-    //         if (!cardNumberInput.value || !expDateInput.value || !cvvInput.value) {
-    //             alert("Please fill in all card details");
-    //             return;
-    //         }
-    //     }
-    //     dispatch(clearCart());
-    //     setIsPaymentComplete(true);
-    // };
     const handlePayment = () => {
         if (!email) {
             alert("Please enter your email");
@@ -97,7 +75,7 @@ export const PaymentPage: FC<PaymentPageProps> = () => {
                     <Link to="/" className="bg-[#85714D]/80 text-white px-4 py-2 rounded mt-4">Continue Shopping</Link>
                 </div>
             ) : (
-                <Grid columns="3" className="min-h-[42rem] h-auto gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 min-h-[42rem] h-auto gap-4">
                     <Card>
                         <div className="p-2">
                             <h1 className="text-2xl mb-4">Payment Details</h1>
@@ -248,7 +226,7 @@ export const PaymentPage: FC<PaymentPageProps> = () => {
                             )}
                         </div>
                     </Card>
-                </Grid>
+                </div>
             )}
         </section>
     )
