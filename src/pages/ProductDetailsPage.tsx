@@ -1,7 +1,9 @@
-import { Box, Button, Grid, Heading, Text, Tooltip } from '@radix-ui/themes';
+import { Box, Button, Grid, Tooltip } from '@radix-ui/themes';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import productsData from '../data/products.json';
+import { useAppDispatch } from '../hooks';
+import { addToCart } from '../store/actions/actions';
 import { Product } from '../types';
 
 // Product | undefined
@@ -10,12 +12,19 @@ const getProductById = (productId: string): any => {
 };
 
 const ProductDetailsPage: React.FC = () => {
+    const dispatch = useAppDispatch();
+
     const { productId }: any = useParams<{ productId: string }>();
     const product: Product | undefined = getProductById(productId);
 
     if (!product) {
         return <div>Product not found</div>;
     }
+
+    const handleAddToCart = () => {
+        dispatch(addToCart(product.id));
+        // setAddedCount((prevCount: number) => prevCount + 1); // Увеличиваем количество товара в состоянии
+    };
 
     return (
         <Box className="p-4">
@@ -27,12 +36,12 @@ const ProductDetailsPage: React.FC = () => {
                         className="block w-full h-auto mb-4 rounded-lg"
                     />
                 </Box>
-                <Box>
-                    <Heading size="9" className="font-bold text-[64px] mb-2">{product.name}</Heading>
-                    <Text size="3" className="text-gray-700 mb-2">{product.description}</Text>
-                    <Text as='div' size="3" className="font-bold text-xl">Price: ${product.price}</Text>
+                <Box className='p-4'>
+                    <p className="text-[48px] mb-2">{product.name}</p>
+                    <p className="text-gray-700 mb-2">{product.description}</p>
+                    <p className="text-xl">Price: ${product.price}</p>
                     <Tooltip content="Add to Cart">
-                        <Button className='bg-[#85714D] mt-4'>
+                        <Button className='bg-[#85714D] mt-4' onClick={handleAddToCart}>
                             Add to Cart
                         </Button>
                     </Tooltip>

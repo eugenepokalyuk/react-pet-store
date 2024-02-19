@@ -1,5 +1,5 @@
 import { MinusIcon, PlusIcon, ReaderIcon } from '@radix-ui/react-icons';
-import { Box, Button, Flex, Inset, Strong, Text } from '@radix-ui/themes';
+import { Box, Button, Flex, Inset, Text } from '@radix-ui/themes';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../hooks';
@@ -13,16 +13,18 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     const dispatch = useAppDispatch();
     const cartItems = useAppSelector((store) => store.cart.items);
-    const [addedCount, setAddedCount] = useState(cartItems[product.id] ?? 0); // Извлекаем количество товара из корзины
+    // const [addedCount, setAddedCount] = useState<number>(0); // Извлекаем количество товара из корзины
+    const [addedCount, setAddedCount] = useState<number>(cartItems[product.id] ?? 0); // Извлекаем количество товара из корзины
 
     const handleAddToCart = () => {
         dispatch(addToCart(product.id));
-        setAddedCount((prevCount: number) => prevCount + 1); // Увеличиваем количество товара в состоянии
+        setAddedCount((prevCount) => prevCount + 1); // Увеличиваем количество товара в состоянии
     };
-    // toDo удаление товаров из корзины
     const handleRemoveToCart = () => {
-        dispatch(removeFromCart(product.id));
-        // setAddedCount((prevCount: number) => prevCount - 1); // Увеличиваем количество товара в состоянии
+        if (addedCount > 0) {
+            dispatch(removeFromCart(product.id));
+            setAddedCount((prevCount) => prevCount - 1); // Уменьшаем количество товара в состоянии
+        }
     };
 
     return (
@@ -46,11 +48,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             <div className='p-2 pb-4'>
                 <div>
                     <Text as="p" size="3">
-                        <Strong>{product.name}</Strong>
+                        {product.name}
                     </Text>
 
                     <Text as="p" size="3" className='text-sm'>
-                        <Strong>{product.category}</Strong>
+                        {product.category}
                     </Text>
                 </div>
 
