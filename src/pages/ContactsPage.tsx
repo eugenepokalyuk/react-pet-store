@@ -111,9 +111,9 @@ const ContactsPage: FC<ContactsPageProps> = () => {
     }];
 
     return (
-        <section className='container mx-auto mt-[6rem]'>
-            <Grid columns="2" className="items-start justify-center">
-                <Flex>
+        <section className='container mx-auto mt-[6rem] min-h-screen'>
+            <Grid columns="2" className="items-center justify-center">
+                <Flex className='items-center justify-center'>
                     <MapWidget />
                 </Flex>
                 <Flex className='flex-col'>
