@@ -24,7 +24,7 @@ const ImageCarousel: React.FC<{ images: string[], alt?: string }> = ({ images, a
         <div className="flex flex-col items-center justify-center">
             {isLoading && (
                 <div
-                    className="block bg-gray-200 w-full h-[80vh] rounded-lg object-cover flex items-center justify-center"
+                    className="block bg-gray-200 w-full h-[40vh] md:h-[80vh] rounded-lg object-cover flex items-center justify-center"
                 >
                     <div>
                         <img src={RunningCat} alt="" className='w-[100px] h-auto' />
@@ -34,7 +34,7 @@ const ImageCarousel: React.FC<{ images: string[], alt?: string }> = ({ images, a
             <img
                 src={images[currentIndex]}
                 alt={`${alt ? alt : 'carousel'}`}
-                className="block w-full h-[80vh] rounded-lg object-cover"
+                className="block w-full h-[40vh] md:h-[80vh] rounded-lg object-cover"
                 onLoad={() => setIsLoading(false)}
                 onError={() => setIsLoading(false)}
                 style={{ display: isLoading ? 'none' : 'block' }}

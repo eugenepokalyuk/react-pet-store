@@ -13,9 +13,9 @@ export const Header: FC<HeaderProps> = ({ isScrolled }) => {
         <header className={`fixed top-0 w-full z-10 ${isScrolled ? 'header-scrolled' : 'header-not-scrolled'}`}>
             <nav className="container mx-auto border-gray-200 py-6">
                 <Grid columns='2' className="justify-center">
-                    <Flex className="justify-start">
-                        <Link to={DEFAULT_PATH} className="flex items-center">
-                            <Logo className={`h-9 mr-4 ${isScrolled ? 'fill-[#3b444b]' : 'fill-white/90'}`} />
+                    <Flex className="justify-start ml-2">
+                        <Link to={DEFAULT_PATH} className="flex items-center gap-2">
+                            <Logo className={`h-9 ${isScrolled ? 'fill-[#3b444b]' : 'fill-white/90'}`} />
                             <span className={`self-center text-xl font-medium whitespace-nowrap ${isScrolled ? 'text-[#3b444b]' : 'text-white/90'}`}>Pokalyuk Store</span>
                         </Link>
                     </Flex>

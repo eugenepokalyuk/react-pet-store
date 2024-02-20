@@ -36,7 +36,7 @@ const ProductDetailsPage: React.FC = () => {
                             src={product.image}
                             alt={product.name}
                             // h-auto
-                            className="block w-full h-[80vh] mb-4 rounded-lg object-cover"
+                            className="block w-full h-[40vh] md:h-[80vh] mb-4 rounded-lg object-cover"
                         />)
                     }
                 </Box>

@@ -1,7 +1,11 @@
 import { motion } from 'framer-motion';
 import { FC } from 'react';
-import Billboard from '../assets/images/images-billboard.png';
-import { ReactComponent as Logo } from '../assets/images/logo-big.svg';
+import Billboard from '../assets/images/images-billboard1.jpg';
+import Billboard2 from '../assets/images/images-billboard2.jpg';
+import Billboard3 from '../assets/images/images-billboard3.jpg';
+import Billboard4 from '../assets/images/images-billboard4.jpg';
+import Billboard5 from '../assets/images/images-billboard5.jpg';
+import Billboard6 from '../assets/images/images-billboard6.jpg';
 import ProductList from '../components/ProductList';
 import { useAppSelector } from '../hooks';
 
@@ -100,12 +104,12 @@ const HomePage: FC<HomePageProps> = ({ forwardRef }) => {
                 <ProductList products={remainingProducts} />
             </article>
 
-            <article className="hidden bg-fixed w-full h-screen bg-no-repeat md:block" style={{ backgroundImage: `url(${Billboard})` }}>
-            </article>
-
-            <article>
-                <Logo />
-            </article>
+            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center" style={{ backgroundImage: `url(${Billboard3})`, backgroundSize: 'cover' }} />
+            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center" style={{ backgroundImage: `url(${Billboard5})`, backgroundSize: 'cover' }} />
+            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center" style={{ backgroundImage: `url(${Billboard2})`, backgroundSize: 'cover' }} />
+            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center" style={{ backgroundImage: `url(${Billboard6})`, backgroundSize: 'cover' }} />
+            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center" style={{ backgroundImage: `url(${Billboard4})`, backgroundSize: 'cover' }} />
+            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center" style={{ backgroundImage: `url(${Billboard})`, backgroundSize: 'cover' }} />
         </section>
     );
 };

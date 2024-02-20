@@ -11,6 +11,7 @@ import ProductDetailsPage from '../../pages/ProductDetailsPage';
 import { fetchProductsSuccess } from '../../store/actions/actions';
 import { CONTACT_PATH, DEFAULT_PATH, ERROR_PATH, PAYMENT_PATH, PRODUCT_PATH } from '../../utils/routePath';
 import { CartWidget } from '../CartWidget';
+import Footer from '../Footer';
 import { Header } from '../Header';
 
 const App: React.FC = () => {
@@ -55,6 +56,7 @@ const App: React.FC = () => {
         <>Загрузка</>
       )}
       <CartWidget />
+      <Footer />
     </>
   );
 };

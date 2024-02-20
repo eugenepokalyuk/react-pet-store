@@ -33,7 +33,7 @@ export const CartWidget = () => {
                 {Object.keys(cartItems).reduce((total, key) => total + cartItems[key], 0)}
             </span>
             {isCartOpen && (
-                <Box onClick={handlePopupClick} className="absolute bottom-20 right-0 mt-12 w-80 bg-white border-4 border-[#3b444b] rounded-lg shadow p-4 cart-widget">
+                <Box onClick={handlePopupClick} className="absolute bottom-20 right-0 mt-12 w-80 bg-white border-2 border-[#3b444b] rounded-lg shadow p-4 cart-widget">
                     {Object.keys(cartItems).length > 0 ? (
                         <>
                             <ul className='max-h-[400px] overflow-auto'>
