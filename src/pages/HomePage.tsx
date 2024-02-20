@@ -104,12 +104,12 @@ const HomePage: FC<HomePageProps> = ({ forwardRef }) => {
                 <ProductList products={remainingProducts} />
             </article>
 
-            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center" style={{ backgroundImage: `url(${Billboard3})`, backgroundSize: 'cover' }} />
-            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center" style={{ backgroundImage: `url(${Billboard5})`, backgroundSize: 'cover' }} />
-            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center" style={{ backgroundImage: `url(${Billboard2})`, backgroundSize: 'cover' }} />
-            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center" style={{ backgroundImage: `url(${Billboard6})`, backgroundSize: 'cover' }} />
-            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center" style={{ backgroundImage: `url(${Billboard4})`, backgroundSize: 'cover' }} />
-            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center" style={{ backgroundImage: `url(${Billboard})`, backgroundSize: 'cover' }} />
+            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard3})` }} />
+            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard5})` }} />
+            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard2})` }} />
+            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard6})` }} />
+            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard4})` }} />
+            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard})` }} />
         </section>
     );
 };
