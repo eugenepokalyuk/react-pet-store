@@ -20,6 +20,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         dispatch(addToCart(product.id));
         setAddedCount((prevCount) => prevCount + 1);
     };
+
     const handleRemoveToCart = () => {
         if (addedCount > 0) {
             dispatch(removeFromCart(product.id));
@@ -45,6 +46,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                             height: 300,
                             backgroundColor: 'var(--gray-5)',
                         }}
+                        className='group-hover:scale-125 transition-transform duration-300 ease-in-out transform'
                     />
                 </Inset>
             </Link>
