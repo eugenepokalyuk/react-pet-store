@@ -1,4 +1,4 @@
-import { Flex, Grid } from '@radix-ui/themes';
+import { Flex } from '@radix-ui/themes';
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { FC } from 'react';
 
@@ -112,7 +112,7 @@ const ContactsPage: FC<ContactsPageProps> = () => {
 
     return (
         <section className='container mx-auto mt-[6rem] min-h-screen'>
-            <Grid columns="2" className="items-center justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center">
                 <Flex className='items-center justify-center'>
                     <MapWidget />
                 </Flex>
@@ -129,7 +129,7 @@ const ContactsPage: FC<ContactsPageProps> = () => {
                         ))}
                     </Accordion>
                 </Flex>
-            </Grid>
+            </div>
         </section>
     );
 };
