@@ -1,5 +1,6 @@
 import { MinusIcon, PlusIcon, ReaderIcon } from '@radix-ui/react-icons';
-import { Box, Button, Flex, Inset, Text } from '@radix-ui/themes';
+import { Button, Flex, Inset, Text } from '@radix-ui/themes';
+import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../hooks';
@@ -13,7 +14,6 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     const dispatch = useAppDispatch();
     const cartItems = useAppSelector((store) => store.cart.items);
-    // const [addedCount, setAddedCount] = useState<number>(0); // Извлекаем количество товара из корзины
     const [addedCount, setAddedCount] = useState<number>(cartItems[product.id] ?? 0); // Извлекаем количество товара из корзины
 
     const handleAddToCart = () => {
@@ -28,7 +28,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     };
 
     return (
-        <Box className='transition-transform duration-300 ease-in-out transform bg-gray-100 rounded-lg group'>
+        <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3 }}
+            className='transition-transform duration-300 ease-in-out transform bg-gray-100 rounded-lg group'>
             <Link to={`/product/${product.id}`} className="flex items-center">
                 <Inset clip="padding-box" side="top" pb="current" className='w-full mx-auto rounded-tl-lg rounded-tr-lg'>
                     <img
@@ -58,42 +62,52 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
                 <Flex className='flex-wrap justify-between mt-4'>
                     <Link to={`/product/${product.id}`} className="flex items-center cursor-pointer">
-                        <Button className='cursor-pointer bg-[#85714D]/60 group-hover:bg-[#85714D]/80'>
-                            <ReaderIcon width="16" height="16" /> Read more
-                        </Button>
+                        <motion.button
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                            className='flex items-center justify-between p-1 px-2 rounded cursor-pointer bg-[#3b444b]/60 group-hover:bg-[#3b444b]/80 text-white'
+                        >
+                            <ReaderIcon width="16" height="16" className='mr-2'/> Read more
+                        </motion.button>
                     </Link>
 
                     <div className="flex items-center">
                         {addedCount > 0 ? (
                             <>
-                                <Button
-                                    className='cursor-pointer bg-[#85714D]/60 group-hover:bg-[#85714D]/80'
+                                <motion.button
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    className='flex items-center justify-between p-2 rounded cursor-pointer bg-[#3b444b]/60 group-hover:bg-[#3b444b]/70 text-white'
                                     onClick={handleRemoveToCart}
                                 >
                                     <MinusIcon width="16" height="16" />
-                                </Button>
+                                </motion.button>
                                 <Button
                                     className='bg-transparent text-black'
                                 >{addedCount}</Button>
-                                <Button
-                                    className='cursor-pointer bg-[#85714D]/60 group-hover:bg-[#85714D]/80'
+                                <motion.button
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    className='flex items-center justify-between p-2 rounded cursor-pointer bg-[#3b444b]/60 group-hover:bg-[#3b444b]/70 text-white'
                                     onClick={handleAddToCart}
                                 >
                                     <PlusIcon width="16" height="16" />
-                                </Button>
+                                </motion.button>
                             </>
                         ) : (
-                            <Button
-                                className='cursor-pointer bg-[#85714D]/60 group-hover:bg-[#85714D]/80'
+                            <motion.button
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.9 }}
+                                className='flex items-center justify-between p-2 rounded cursor-pointer bg-[#3b444b]/60 group-hover:bg-[#3b444b]/70 text-white'
                                 onClick={handleAddToCart}
                             >
                                 <PlusIcon width="16" height="16" />
-                            </Button>
+                            </motion.button>
                         )}
                     </div>
                 </Flex>
             </div>
-        </Box>
+        </motion.div>
     );
 };
 

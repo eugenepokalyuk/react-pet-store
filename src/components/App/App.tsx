@@ -3,15 +3,15 @@ import { useInView } from 'react-intersection-observer';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import products from '../../data/products.json';
 import { useAppDispatch } from '../../hooks';
+import ContactsPage from '../../pages/ContactsPage';
 import ErrorPage from '../../pages/ErrorPage';
 import HomePage from '../../pages/HomePage';
 import { PaymentPage } from '../../pages/PaymentPage';
 import ProductDetailsPage from '../../pages/ProductDetailsPage';
 import { fetchProductsSuccess } from '../../store/actions/actions';
-import { DEFAULT_PATH, ERROR_PATH, PAYMENT_PATH, PRODUCT_PATH } from '../../utils/routePath';
+import { CONTACT_PATH, DEFAULT_PATH, ERROR_PATH, PAYMENT_PATH, PRODUCT_PATH } from '../../utils/routePath';
 import { CartWidget } from '../CartWidget';
 import { Header } from '../Header';
-
 
 const App: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -45,6 +45,7 @@ const App: React.FC = () => {
         <main className='bg-[#F4F2F0]'>
           <Routes location={background || location}>
             <Route path={DEFAULT_PATH} element={<HomePage forwardRef={ref} />} />
+            <Route path={CONTACT_PATH} element={<ContactsPage />} />
             <Route path={PRODUCT_PATH} element={<ProductDetailsPage />} />
             <Route path={PAYMENT_PATH} element={<PaymentPage />} />
             <Route path={ERROR_PATH} element={<ErrorPage />} />

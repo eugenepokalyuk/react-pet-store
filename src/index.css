@@ -38,7 +38,7 @@ section {
 
 .header-not-scrolled {
     transition: 300ms;
-    background: #85714D;
+    background: #3b444b;
 }
 
 .cart-widget {
@@ -54,7 +54,48 @@ section {
     transform: translateX(50%);
     border-width: 10px;
     border-style: solid;
-    border-color: transparent transparent #85714D transparent;
+    border-color: transparent transparent #3b444b transparent;
     /* border-color: transparent transparent #fff transparent; */
     rotate: 180deg;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease-out;
+}
+
+
+.AccordionItem {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.AccordionHeader {
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color .15s ease-in-out;
+}
+
+.AccordionHeader:hover {
+    background-color: #3b444b;
+    color: #fff;
+}
+
+.AccordionHeader:active {
+    background-color: #3b444b;
+}
+
+.AccordionPanel {
+    padding: 20px;
 }

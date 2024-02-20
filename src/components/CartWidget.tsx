@@ -1,13 +1,17 @@
 import { Box } from '@radix-ui/themes';
+import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ReactComponent as ShoppingBag } from '../assets/images/shopping-bag.svg';
 import { useAppSelector } from '../hooks';
+import { Product } from '../types';
 import { PAYMENT_PATH } from '../utils/routePath';
 
 export const CartWidget = () => {
     const cartItems = useAppSelector((store) => store.cart.items);
     const [isCartOpen, setIsCartOpen] = useState(false);
+    const products = useAppSelector((store) => store.products.products);
+    const groupedItems = groupCartItems(cartItems, products);
 
     const handleCartClick = () => {
         setIsCartOpen(!isCartOpen);
@@ -17,15 +21,20 @@ export const CartWidget = () => {
         event.stopPropagation();
     };
 
-    const groupedItems = groupCartItems(cartItems);
-
     return (
-        <Box className="fixed bottom-5 right-5 bg-[#85714D]/50 rounded-full p-4 cursor-pointer" onClick={handleCartClick}>
+        <motion.button
+            whileHover={isCartOpen ? {} : { scale: 1.1 }}
+            whileTap={isCartOpen ? {} : { scale: 0.9 }}
+            className="fixed bottom-5 right-5 bg-[#3b444b]/50 rounded-full p-4 cursor-pointer"
+            onClick={handleCartClick}
+        >
             <ShoppingBag className="w-8 h-8 fill-white/90" />
-            <span className="absolute top-0 right-0 flex justify-center items-center bg-red-500/90 rounded-full w-5 h-5 text-sm text-white">{cartItems.length}</span>
+            <span className="absolute top-0 right-0 flex justify-center items-center bg-red-500/90 rounded-full w-5 h-5 text-sm text-white">
+                {Object.keys(cartItems).reduce((total, key) => total + cartItems[key], 0)}
+            </span>
             {isCartOpen && (
-                <Box onClick={handlePopupClick} className="absolute bottom-20 right-0 mt-12 w-80 bg-white border-4 border-[#85714D] rounded-lg shadow p-4 cart-widget">
-                    {cartItems.length > 0 ? (
+                <Box onClick={handlePopupClick} className="absolute bottom-20 right-0 mt-12 w-80 bg-white border-4 border-[#3b444b] rounded-lg shadow p-4 cart-widget">
+                    {Object.keys(cartItems).length > 0 ? (
                         <>
                             <ul className='max-h-[400px] overflow-auto'>
                                 {groupedItems.map((group) => (
@@ -34,7 +43,7 @@ export const CartWidget = () => {
                                         <ul>
                                             {group.items.map((item) => (
                                                 <li key={item.id} className="flex justify-between">
-                                                    <span className="flex-grow">{item.name} {item.quantity > 1 ? `x${item.quantity}` : ''}</span>
+                                                    <span>{item.name} {item.quantity > 1 ? `x${item.quantity}` : ''}</span>
                                                     <span>${item.price * item.quantity}</span>
                                                 </li>
                                             ))}
@@ -50,7 +59,13 @@ export const CartWidget = () => {
                                 </div>
 
                                 <Link to={PAYMENT_PATH}>
-                                    <button className="w-full mt-2 bg-[#85714D]/80 text-white px-4 py-2 rounded">Pay</button>
+                                    <motion.button
+                                        whileHover={{ scale: 1.05 }}
+                                        whileTap={{ scale: 0.9 }}
+                                        className="w-full mt-2 bg-[#3b444b]/80 text-white px-4 py-2 rounded"
+                                    >
+                                        Pay
+                                    </motion.button>
                                 </Link>
                             </div>
                         </>
@@ -59,27 +74,28 @@ export const CartWidget = () => {
                     )}
                 </Box>
             )}
-        </Box>
+        </motion.button>
     );
 };
 
-export const groupCartItems = (cartItems: number[]): { category: string; items: { id: string; name: string; price: number; quantity: number }[] }[] => {
-    const products = useAppSelector((store) => store.products.products);
+export const groupCartItems = (
+    cartItems: { [productId: number]: number },
+    products: Product[]
+): { category: string; items: { id: number; name: string; price: number; quantity: number }[] }[] => {
+    const groupedItems: { category: string; items: { id: number; name: string; price: number; quantity: number }[] }[] = [];
 
-    const groupedItems: { category: string; items: { id: string; name: string; price: number; quantity: number }[] }[] = [];
-
-    cartItems.forEach((itemId) => {
+    Object.entries(cartItems).forEach(([itemId, quantity]) => {
         const item: any = products.find((product: any) => product.id === itemId);
         if (item) {
             const categoryIndex = groupedItems.findIndex((group) => group.category === item.category);
             if (categoryIndex === -1) {
-                groupedItems.push({ category: item.category, items: [{ ...item, quantity: 1 }] });
+                groupedItems.push({ category: item.category, items: [{ ...item, id: parseInt(item.id), quantity }] });
             } else {
-                const existingItem = groupedItems[categoryIndex].items.find((groupedItem) => groupedItem.id === item.id);
-                if (existingItem) {
-                    existingItem.quantity += 1;
+                const existingItemIndex = groupedItems[categoryIndex].items.findIndex((groupedItem) => groupedItem.id === parseInt(item.id));
+                if (existingItemIndex !== -1) {
+                    groupedItems[categoryIndex].items[existingItemIndex].quantity += quantity;
                 } else {
-                    groupedItems[categoryIndex].items.push({ ...item, quantity: 1 });
+                    groupedItems[categoryIndex].items.push({ ...item, id: parseInt(item.id), quantity });
                 }
             }
         }
@@ -88,10 +104,10 @@ export const groupCartItems = (cartItems: number[]): { category: string; items: 
     return groupedItems;
 };
 
-export const calculateTotal = (groupedItems: { category: string; items: { id: string; name: string; price: number; quantity: number }[] }[]): number => {
+export const calculateTotal = (groupedItems: { category: string; items: { id: number; name: string; price: number; quantity: number }[] }[]): number => {
     let total = 0;
-    groupedItems.forEach((group) => {
-        group.items.forEach((item) => {
+    groupedItems.forEach(group => {
+        group.items.forEach(item => {
             total += item.price * item.quantity;
         });
     });
