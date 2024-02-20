@@ -24,7 +24,6 @@ const ProductDetailsPage: React.FC = () => {
 
     const handleAddToCart = () => {
         dispatch(addToCart(product.id));
-        // setAddedCount((prevCount: number) => prevCount + 1); // Увеличиваем количество товара в состоянии
     };
 
     return (

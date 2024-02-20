@@ -14,16 +14,16 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     const dispatch = useAppDispatch();
     const cartItems = useAppSelector((store) => store.cart.items);
-    const [addedCount, setAddedCount] = useState<number>(cartItems[product.id] ?? 0); // Извлекаем количество товара из корзины
+    const [addedCount, setAddedCount] = useState<number>(cartItems[product.id] ?? 0);
 
     const handleAddToCart = () => {
         dispatch(addToCart(product.id));
-        setAddedCount((prevCount) => prevCount + 1); // Увеличиваем количество товара в состоянии
+        setAddedCount((prevCount) => prevCount + 1);
     };
     const handleRemoveToCart = () => {
         if (addedCount > 0) {
             dispatch(removeFromCart(product.id));
-            setAddedCount((prevCount) => prevCount - 1); // Уменьшаем количество товара в состоянии
+            setAddedCount((prevCount) => prevCount - 1);
         }
     };
 
@@ -67,7 +67,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                             whileTap={{ scale: 0.9 }}
                             className='flex items-center justify-between p-1 px-2 rounded cursor-pointer bg-[#3b444b]/60 group-hover:bg-[#3b444b]/80 text-white'
                         >
-                            <ReaderIcon width="16" height="16" className='mr-2'/> Read more
+                            <ReaderIcon width="16" height="16" className='mr-2' /> Read more
                         </motion.button>
                     </Link>
 
