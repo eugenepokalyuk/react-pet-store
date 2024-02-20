@@ -16,7 +16,7 @@ export const Header: FC<HeaderProps> = ({ isScrolled }) => {
                     <Flex className="justify-start ml-2">
                         <Link to={DEFAULT_PATH} className="flex items-center gap-2">
                             <Logo className={`h-9 ${isScrolled ? 'fill-[#3b444b]' : 'fill-white/90'}`} />
-                            <span className={`self-center text-xl font-medium whitespace-nowrap ${isScrolled ? 'text-[#3b444b]' : 'text-white/90'}`}>Pokalyuk Store</span>
+                            <span className={`self-center text-xl font-medium whitespace-nowrap ${isScrolled ? 'text-[#3b444b]' : 'text-white/90'}`}>Pet Store</span>
                         </Link>
                     </Flex>
                     <Flex className="justify-end">

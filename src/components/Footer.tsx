@@ -5,7 +5,7 @@ const Footer = () => {
             <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between">
                 <div className="w-full md:w-auto text-center md:text-left md:flex-1">
                     <p className="text-sm md:text-lg text-gold-500 font-light mb-2">
-                        © {new Date().getFullYear()} Pokalyuk Store. All rights reserved.
+                        © {new Date().getFullYear()} Pet Store. All rights reserved.
                     </p>
                 </div>
                 <div className="flex justify-center md:justify-end flex-wrap gap-4">
