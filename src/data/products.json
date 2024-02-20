@@ -2,203 +2,353 @@
     "products": [
         {
             "id": "1",
-            "name": "Бирка для питомца",
+            "name": "Interlocking g pet tag",
             "category": "Gucci",
             "price": 230,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1664296249/692966_J160G_0812_001_100_0000_Light--G.jpg"
+            "description": "The Gucci universe expands to include a selection of accessories for household animals. Each piece encompasses the joy and companionship that stems from the unique relationships between pets and people. A reimagination of the everyday, this tag for pets is presented in gold-toned brass with an engraved Interlocking G detail.",
+            "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1664296249/692966_J160G_0812_001_100_0000_Light--G.jpg",
+            "additionalImages": [
+                "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1663690509/692966_J160G_0812_002_100_0000_Light-Interlocking-G-pet-tag.jpg",
+                "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1663690512/692966_J160G_0812_009_100_0000_Light-Interlocking-G-pet-tag.jpg"
+            ]
         },
         {
             "id": "2",
-            "name": "Миска для питомца",
+            "name": "Small herbarium print pet bowl",
             "category": "Gucci",
             "price": 580,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1694538102/749640_ZAJH5_3570_001_080_0000_Light--Herbarium.jpg"
+            "description": "Part of the House Lifestyle selection, Gucci Pet infuses everyday items with playful and unexpected elements. The personality of every four-legged friend stands out through collars, bed sets, and more, enriched with the Gucci logo and signature materials. This small pet bowl appears in Herbarium print porcelain.",
+            "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1694538102/749640_ZAJH5_3570_001_080_0000_Light--Herbarium.jpg",
+            "additionalImages": [
+                "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1694538103/749640_ZAJH5_3570_002_080_0000_Light-Small-Herbarium-print-pet-bowl.jpg",
+                "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1694538104/749640_ZAJH5_3570_009_080_0000_Light-Small-Herbarium-print-pet-bowl.jpg",
+                "https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400_40/1696582032/749640_ZAJH5_3570_003_100_0000_Light-Small-Herbarium-print-pet-bowl.jpg"
+            ]
         },
         {
             "id": "3",
-            "name": "Переноска для питомца",
+            "name": "Pet carrier with web",
             "category": "Gucci",
             "price": 4050,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1656336603/692958_2ZGKG_8745_001_088_0000_Light--GG-Web.jpg"
+            "description": "The Gucci universe expands to include a selection of accessories for household animals. Each piece encompasses the joy and companionship that stems from the unique relationships between pets and people. A reimagination of the everyday, this pet carrier is presented in beige and ebony GG Supreme canvas with the historic Web colors.",
+            "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1656336603/692958_2ZGKG_8745_001_088_0000_Light--GG-Web.jpg",
+            "additionalImages": [
+                "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1655482548/699282_2ZGKG_8745_002_100_0000_Light-Pet-carrier-with-Web.jpg",
+                "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1655482549/699282_2ZGKG_8745_007_100_0000_Light-Pet-carrier-with-Web.jpg",
+                "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1655482550/699282_2ZGKG_8745_009_100_0000_Light-Pet-carrier-with-Web.jpg",
+                "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1655482551/699282_2ZGKG_8745_010_100_0000_Light-Pet-carrier-with-Web.jpg",
+                "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1655482553/699282_2ZGKG_8745_012_100_0000_Light-Pet-carrier-with-Web.jpg",
+                "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1655482554/699282_2ZGKG_8745_013_100_0000_Light-Pet-carrier-with-Web.jpg",
+                "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1655482555/699282_2ZGKG_8745_015_100_0000_Light-Pet-carrier-with-Web.jpg",
+                "https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400_40/1655469913/699282_2ZGKG_8745_003_100_0000_Light-Pet-carrier-with-Web.jpg"
+            ]
         },
         {
             "id": "4",
-            "name": "Поводок для питомца",
+            "name": "Small/medium pet collar",
             "category": "Gucci",
             "price": 350,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "description": "The Gucci universe expands to include a selection of accessories for household animals. Each piece encompasses the joy and companionship that stems from the unique relationships between pets and people. A reimagination of the everyday, this pet collar is presented in beige and ebony GG Supreme canvas with a mini Interlocking G detail.",
             "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1690877793/695256_2ZGHG_8367_001_100_0000_Light-.jpg"
         },
         {
             "id": "5",
-            "name": "Поводок для питомца",
+            "name": "Small/medium pet collar",
             "category": "Gucci",
             "price": 345,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "description": "In celebration of the House's menagerie, the Gucci universe expands with accessories for pets. The joyful collection sees the logos, materials and symbols that are intrinsically linked to the brand reinterpreted in miniature. Here, the Web stripe becomes a collar in green and red.",
             "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1655463603/695256_UTVAG_8742_001_100_0000_Light-.jpg"
         },
         {
             "id": "6",
-            "name": "Поводок для питомца",
+            "name": "Extra-small pet collar",
             "category": "Gucci",
             "price": 410,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1655466312/692947_UW4AG_8367_001_100_0067_Light-.jpg"
+            "description": "Punk influences appear throughout the adult's collection as an ode to freedom of self-expression. A playful take on the theme that recalls choker necklaces, this pet collar is brought to life by a spiked trim. The GG Supreme canvas and Interlocking G add a strong logo feel to the piece.",
+            "image": "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1655466312/692947_UW4AG_8367_001_100_0067_Light-.jpg",
+            "additionalImages": [
+                "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1655466316/692947_UW4AG_8367_007_100_0067_Light-Extra-small-pet-collar.jpg",
+                "https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1655466314/692947_UW4AG_8367_002_100_0067_Light-Extra-small-pet-collar.jpg",
+                "https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400_40/1655474419/692947_UW4AG_8367_003_100_0000_Light-Extra-small-pet-collar.jpg",
+                "https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400_40/1655474420/692947_UW4AG_8367_004_100_0000_Light-Extra-small-pet-collar.jpg",
+                "https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400_40/1655474422/692947_UW4AG_8367_005_100_0000_Light-Extra-small-pet-collar.jpg"
+            ]
         },
         {
             "id": "7",
-            "name": "Поводок для питомца",
+            "name": "Pet Collar",
             "category": "Dior",
             "price": 550,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://www.dior.com/couture/ecommerce/media/catalog/product/J/y/1683207937_4603RUYKY_H03E_E01_GHC.jpg?imwidth=3840"
+            "description": "Maison Dior showcases couture codes in accessories for pets. The collar is crafted in black Dior Oblique jacquard and is enhanced by an adjustable Christian Dior jacquard strap. An aluminum buckle clasp adorned with the Christian Dior signature, CD initials and a Dior medallion complete the style. The elegant and comfortable collar can be paired with the matching leash.",
+            "image": "https://www.dior.com/couture/ecommerce/media/catalog/product/J/y/1683207937_4603RUYKY_H03E_E01_GHC.jpg?imwidth=3840",
+            "additionalImages": [
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/J/y/1683207937_4603RUYKY_H03E_E03_GHC.jpg?imwidth=3840",
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/J/y/1683207937_4603RUYKY_H03E_E07_GHC.jpg?imwidth=3840"
+            ]
         },
         {
             "id": "8",
-            "name": "Переноска для питомца",
+            "name": "Dior Hit The Road Pet Carrier Bag",
             "category": "Dior",
             "price": 3300,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://www.dior.com/couture/ecommerce/media/catalog/product/u/V/1682351131_1ESDU035CDP_H42E_E01_GHC.jpg?imwidth=3840"
+            "description": "New for Spring 2023, the Dior Hit The Road pet carrier bag showcases couture House codes. Crafted in Dior gray CD Diamond canvas, it features a large zip opening revealing a spacious compartment. A Cannage Cosmos leather side offers ideal breathability, while the front flap pocket keeps essentials close at hand. Top handles and an adjustable, removable leather shoulder strap allow the bag to be carried by hand, worn over the shoulder or crossbody.",
+            "image": "https://www.dior.com/couture/ecommerce/media/catalog/product/u/V/1682351131_1ESDU035CDP_H42E_E01_GHC.jpg?imwidth=3840",
+            "additionalImages": [
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/e/X/1672998318_1ESDU035CDP_H42E_E11_GHC.jpg?imwidth=3840",
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/e/X/1672998318_1ESDU035CDP_H42E_E12_GHC.jpg?imwidth=3840",
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/u/V/1682351131_1ESDU035CDP_H42E_E03_GHC.jpg?imwidth=3840",
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/u/V/1682351132_1ESDU035CDP_H42E_E08_GHC.jpg?imwidth=3840",
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/u/V/1682351131_1ESDU035CDP_H42E_E02_GHC.jpg?imwidth=3840",
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/u/V/1682351131_1ESDU035CDP_H42E_E06_GHC.jpg?imwidth=3840",
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/u/V/1682351132_1ESDU035CDP_H42E_E07_GHC.jpg?imwidth=3840",
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/u/V/1682351132_1ESDU035CDP_H42E_E09_GHC.jpg?imwidth=3840"
+            ]
         },
         {
             "id": "9",
-            "name": "Переноска для питомца",
+            "name": "Dior Hit The Road Pet Carrier Bag",
             "category": "Dior",
             "price": 3200,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://www.dior.com/couture/ecommerce/media/catalog/product/S/Z/1683207939_1ESDU035YKU_H27E_E01_GHC.jpg?imwidth=3840"
+            "description": "New for Spring 2023, the Dior Hit The Road pet carrier bag showcases couture House codes. Crafted in beige and black Dior Oblique jacquard, it features a large zip opening revealing a spacious compartment. A Cannage Cosmos leather side offers ideal breathability, while the front flap pocket keeps essentials close at hand. Top handles and an adjustable and removable smooth calfskin leather shoulder strap allow the bag to be carried by hand, worn over the shoulder or crossbody.",
+            "image": "https://www.dior.com/couture/ecommerce/media/catalog/product/S/Z/1683207939_1ESDU035YKU_H27E_E01_GHC.jpg?imwidth=3840",
+            "additionalImages": [
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/m/a/1672998316_1ESDU035YKU_H27E_E11_GHC.jpg?imwidth=3840",
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/m/a/1672998316_1ESDU035YKU_H27E_E12_GHC.jpg?imwidth=3840",
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/W/d/1686901518_1ESDU035YKU_H27E_E03_GHC.jpg?imwidth=3840",
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/S/Z/1683207939_1ESDU035YKU_H27E_E08_GHC.jpg?imwidth=3840",
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/S/Z/1683207939_1ESDU035YKU_H27E_E02_GHC.jpg?imwidth=3840",
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/W/d/1686901518_1ESDU035YKU_H27E_E06_GHC.jpg?imwidth=3840",
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/S/Z/1683207939_1ESDU035YKU_H27E_E07_GHC.jpg?imwidth=3840",
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/S/Z/1683207939_1ESDU035YKU_H27E_E09_GHC.jpg?imwidth=3840"
+            ]
         },
         {
             "id": "10",
-            "name": "Шлейка для питомца",
+            "name": "Pet Harness",
             "category": "Dior",
             "price": 770,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://www.dior.com/couture/ecommerce/media/catalog/product/d/w/1685958334_4601RUYKY_H27E_E03_GHC.jpg?imwidth=3840"
+            "description": "Maison Dior showcases couture codes in accessories for pets. Spring 2023's new harness is crafted in beige and black Dior Oblique jacquard and is further enhanced by an aluminum buckle clasp, adorned with a Christian Dior signature and CD initials. The D rings at the back complete the elegant and comfortable design, which can fasten to the matching leash.",
+            "image": "https://www.dior.com/couture/ecommerce/media/catalog/product/d/w/1685958334_4601RUYKY_H27E_E03_GHC.jpg?imwidth=3840",
+            "additionalImages": [
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/t/u/1672998316_4601RUYKY_H27E_E11_GHC.jpg?imwidth=3840",
+                "https://www.dior.com/couture/ecommerce/media/catalog/product/t/u/1672998316_4601RUYKY_H27E_E12_GHC.jpg?imwidth=3840"
+            ]
         },
         {
             "id": "11",
-            "name": "Поводок для питомца",
+            "name": "Collar",
             "category": "Louis Vuitton",
-            "price": 425,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-collar-xs-monogram-canvas-trunks-and-travel--M80339_PM2_Front%20view.png?wid=1440&hei=1440"
+            "price": 515,
+            "description": "Every dog can be as fashionable as its owner with this new collar in iconic Monogram canvas and timeless natural cowhide. Styled after historic products from the House’s product range, it features a miniature luggage tag that can be hot-stamped with the pet’s initials. And it goes perfectly with the new Louis Vuitton Dog Carrier and leash.",
+            "image": "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-collar-xs-monogram-canvas-trunks-and-travel--M80339_PM2_Front%20view.png?wid=1440&hei=1440",
+            "additionalImages": [
+                "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-collar-pm-monogram-canvas-trunks-and-travel--M80340_PM1_Closeup%20view.png?wid=1440&hei=1440",
+                "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-collar-pm-monogram-canvas-trunks-and-travel--M80340_PM1_Side%20view.png?wid=1440&hei=1440",
+                "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-collar-pm-monogram-canvas-trunks-and-travel--M80340_PM1_Back%20view.png?wid=1440&hei=1440",
+                "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-collar-pm-monogram-canvas-trunks-and-travel--M80340_PM1_Interior%20view.png?wid=1440&hei=1440"
+            ]
         },
         {
             "id": "12",
-            "name": "Переноска для питомца",
+            "name": "Dog Bag",
             "category": "Louis Vuitton",
             "price": 5550,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-dog-bag-monogram-canvas-trunks-and-travel--M45662_PM2_Front%20view.png?wid=1440&hei=1440"
+            "description": "Louis Vuitton’s classic Dog Carrier has been updated with a sleek design and handy new functions. Styled in Monogram canvas with natural cowhide trim like the historic version, it’s designed for comfort with plush carpet and a soft ventilation net. Easy to carry with its adjustable shoulder strap, it’s the stylish, practical way to travel with a pet.",
+            "image": "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-dog-bag-monogram-canvas-trunks-and-travel--M45662_PM2_Front%20view.png?wid=1440&hei=1440",
+            "additionalImages": [
+                "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-dog-bag-monogram-canvas-trunks-and-travel--M45662_PM1_Side%20view.png?wid=1440&hei=1440",
+                "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-dog-bag-monogram-canvas-trunks-and-travel--M45662_PM1_Other%20view.png?wid=1440&hei=1440",
+                "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-dog-bag-monogram-canvas-trunks-and-travel--M45662_PM1_Closeup%20view.png?wid=1440&hei=1440",
+                "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-dog-bag-monogram-canvas-trunks-and-travel--M45662_PM1_Interior%20view.png?wid=1440&hei=1440",
+                "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-dog-bag-monogram-canvas-trunks-and-travel--M45662_PM1_Detail%20view.png?wid=1440&hei=1440"
+            ]
         },
         {
             "id": "13",
-            "name": "Одеяло для питомца",
+            "name": "Neo Monogram Blanket",
             "category": "Louis Vuitton",
             "price": 2390,
             "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neo-monogram-blanket-s00-home-textile--M70439_PM2_Front%20view.png?wid=1440&hei=1440"
+            "image": "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neo-monogram-blanket-s00-home-textile--M70439_PM2_Front%20view.png?wid=1440&hei=1440",
+            "additionalImages": [
+                "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neo-monogram-blanket-s00-home-textile--M70439_PM1_Closeup%20view.png?wid=1440&hei=1440",
+                "https://au.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neo-monogram-blanket-s00-home-textile--M70439_PM1_Back%20view.png?wid=1440&hei=1440"
+            ]
         },
         {
             "id": "14",
-            "name": "Поводок для питомца",
+            "name": "Garavani rockstud pet leash",
             "category": "Valentino",
-            "price": 350,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://valentino-cdn.thron.com/delivery/public/image/valentino/1d4aea77-44cd-4814-b231-a4264e3114f8/ihqstx/std/2000x0/VALENTINO-GARAVANI-ROCKSTUD-PET-LEASH?quality=80&size=35&format=auto"
+            "price": 470,
+            "description": "Valentino Garavani Rockstud Pet leash in calfskin leather embellished with platinum-finish studs.",
+            "image": "https://valentino-cdn.thron.com/delivery/public/image/valentino/1d4aea77-44cd-4814-b231-a4264e3114f8/ihqstx/std/2000x0/VALENTINO-GARAVANI-ROCKSTUD-PET-LEASH?quality=80&size=35&format=auto",
+            "additionalImages": [
+                "https://valentino-cdn.thron.com/delivery/public/image/valentino/135492cc-0a48-431b-9d9b-e87226d22ef2/ihqstx/std/2000x0/VALENTINO-GARAVANI-ROCKSTUD-PET-LEASH?quality=80&size=35&format=auto",
+                "https://valentino-cdn.thron.com/delivery/public/image/valentino/2f87e397-94d0-4318-b088-0a01f07f9af3/ihqstx/std/2000x0/VALENTINO-GARAVANI-ROCKSTUD-PET-LEASH?quality=80&size=35&format=auto",
+                "https://valentino-cdn.thron.com/delivery/public/image/valentino/0394ecb8-a3d2-4d63-821c-0b0b69b8331a/ihqstx/std/2000x0/VALENTINO-GARAVANI-ROCKSTUD-PET-LEASH?quality=80&size=35&format=auto"
+            ]
         },
         {
             "id": "15",
-            "name": "Поводок для питомца",
+            "name": "Leather and satin pet collar",
             "category": "Miu Miu",
             "price": 495,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
+            "description": "Recalling the world of jewelry, this pet collar is studded with all-over crystals. $ The Miu Miu logo decorates the charm on the accessory.",
             "image": "https://www.miumiu.com/content/dam/miumiu_products/5/5YC/5YC021/2D5HF0522/5YC021_2D5H_F0522_SLF.png/jcr:content/renditions/cq5dam.web.hE7E3DA.2000.2000.jpg"
         },
         {
             "id": "16",
-            "name": "Поводок для питомца",
+            "name": "Intreccio Foulard Pet Collar",
             "category": "Bottega Veneta",
             "price": 890,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://bottega-veneta.dam.kering.com/m/299835c27c5289cb/Large-779722V3VF02231_A.jpg?v=2"
+            "description": "Collar realised using signature Intreccio foulard craftsmanship in padded leather. Handcrafted in Italy.",
+            "image": "https://bottega-veneta.dam.kering.com/m/299835c27c5289cb/Large-779722V3VF02231_A.jpg?v=2",
+            "additionalImages": [
+                "https://bottega-veneta.dam.kering.com/m/2098fb8fc4a01634/Large-779722V3VF02231_B.jpg?v=1"
+            ]
         },
         {
             "id": "17",
-            "name": "Поводок для питомца",
-            "category": "Prada",
-            "price": 460,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://www.prada.com/content/dam/pradabkg_products/2/2YC/2YC011/2DMIF0002/2YC011_2DMI_F0002_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.2000.2000.jpg"
+            "name": "Intreccio Foulard Pet Leash",
+            "category": "Bottega Veneta",
+            "price": 1300,
+            "description": "Leash realised using signature Intreccio foulard craftsmanship in padded leather. Handcrafted in Italy.",
+            "image": "https://bottega-veneta.dam.kering.com/m/24955c7f7a31d3cf/Large-779723V3VF02231_C.jpg?v=1"
         },
         {
             "id": "18",
-            "name": "Поводок для питомца",
-            "category": "Burberry",
-            "price": 380,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://assets.burberry.com/is/image/Burberryltd/C47AF774-EEB2-491C-BF08-9B5160BB61F5?$BBY_V3_SL_1$&wid=2500&hei=2500"
+            "name": "Re-Nylon pet collar",
+            "category": "Prada",
+            "price": 460,
+            "description": "A sophisticated accessory redesigned with technical allure: the collar is made of nylon, a fabric first introduced in the luxury world by Prada and part of the brand's genetic code. The accessory with side-release buckle is accented with the enameled triangle logo.",
+            "image": "https://www.prada.com/content/dam/pradabkg_products/2/2YC/2YC011/2DMIF0002/2YC011_2DMI_F0002_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.2000.2000.jpg",
+            "additionalImages": [
+                "https://www.prada.com/content/dam/pradabkg_products/2/2YC/2YC011/2DMIF0002/2YC011_2DMI_F0002_SLD.jpg/_jcr_content/renditions/cq5dam.web.hebebed.2000.2000.jpg"
+            ]
         },
         {
             "id": "19",
-            "name": "Переноска для питомца",
-            "category": "Dolce&Gabbana",
-            "price": 3545,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://www.dolcegabbana.com/dw/image/v2/BKDB_PRD/on/demandware.static/-/Sites-15/default/dw011cc69b/images/zoom/BB6828AW384_HYNBM_0.jpg"
+            "name": "Check Dog Collar",
+            "category": "Burberry",
+            "price": 380,
+            "description": "A Burberry Check dog collar, made in Italy. The design is lined in smooth leather and detailed with a logo-engraved tag.",
+            "image": "https://assets.burberry.com/is/image/Burberryltd/C47AF774-EEB2-491C-BF08-9B5160BB61F5?$BBY_V3_SL_1$&wid=2500&hei=2500",
+            "additionalImages": [
+                "https://assets.burberry.com/is/image/Burberryltd/B3613364-491A-45D3-92E5-312E4B7A8B66?$BBY_V3_SL_1$&wid=2500&hei=2500",
+                "https://assets.burberry.com/is/image/Burberryltd/F36FBF22-A8F9-4F69-BDB5-801DE8FA4664?$BBY_V3_SL_1$&wid=2500&hei=2500"
+            ]
         },
         {
             "id": "20",
-            "name": "Поводок для питомца",
-            "category": "Giorgio Armani",
-            "price": 210,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://www.armani.com/variants/images/1647597336146849/F/w800.jpg"
+            "name": "Pet carrier",
+            "category": "Dolce&Gabbana",
+            "price": 3545,
+            "description": "The iconic leopard-print Crespo is becoming a pet carrier so you can take your pet with you everywhere. Featuring meticulous attention to detail, the fabric has been carefully printed and then protected by a coating. It features calfskin details and the branded plate with two metal plating finishes.",
+            "image": "https://www.dolcegabbana.com/dw/image/v2/BKDB_PRD/on/demandware.static/-/Sites-15/default/dw011cc69b/images/zoom/BB6828AW384_HYNBM_0.jpg",
+            "additionalImages": [
+                "https://www.dolcegabbana.com/dw/image/v2/BKDB_PRD/on/demandware.static/-/Sites-15/default/dwf536057b/images/zoom/BB6828AW384_HYNBM_5.jpg",
+                "https://www.dolcegabbana.com/dw/image/v2/BKDB_PRD/on/demandware.static/-/Sites-15/default/dwc1768bde/images/zoom/BB6828AW384_HYNBM_6.jpg",
+                "https://www.dolcegabbana.com/dw/image/v2/BKDB_PRD/on/demandware.static/-/Sites-15/default/dw0b813892/images/zoom/BB6828AW384_HYNBM_4.jpg"
+            ]
         },
         {
             "id": "21",
-            "name": "Сумка для питомца",
-            "category": "Giorgio Armani",
-            "price": 250,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://www.armani.com/variants/images/1647597336146010/F/w800.jpg"
+            "name": "Dog coat, M and L",
+            "category": "Hermes",
+            "price": 1150,
+            "description": "",
+            "image": "https://assets.hermes.com/is/image/hermesproduct/dog-coat-m-and-l--800630EA01-worn-1-0-0-800-800_g.jpg",
+            "additionalImages": [
+                "https://assets.hermes.com/is/image/hermesproduct/dog-coat-m-and-l--800630EA01-worn-2-0-0-800-800_g.jpg",
+                "https://assets.hermes.com/is/image/hermesproduct/dog-coat-m-and-l--800630EA01-worn-3-0-0-800-800_g.jpg"
+            ]
         },
         {
             "id": "22",
-            "name": "Одежда для питомца",
-            "category": "Giorgio Armani",
-            "price": 295,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://www.armani.com/variants/images/1647597336146847/F/w800.jpg"
+            "name": "Dog bowl, small model",
+            "category": "Hermes",
+            "price": 1450,
+            "description": "First noticed by Robert Dumas, the son-in-law of Emile Hermès, while on vacation by the sea, the Chaîne d'Ancre motif firmly features on many creations and embodies the Hermès spirit. A combination of marine inspiration and craftsmanship reminiscent of the equestrian world, the bowl moves effortlessly between land and sea to the joy of man's best friend.",
+            "image": "https://assets.hermes.com/is/image/hermesproduct/dog-bowl-small-model--800509E%2001-front-2-300-0-800-800_g.jpg",
+            "additionalImages": [
+                "https://assets.hermes.com/is/image/hermesproduct/dog-bowl-small-model--800509E%2001-worn-1-0-0-800-800_g.jpg",
+                "https://assets.hermes.com/is/image/hermesproduct/dog-bowl-small-model--800509E%2001-front-3-300-0-800-800_g.jpg",
+                "https://assets.hermes.com/is/image/hermesproduct/dog-bowl-small-model--800509E%2001-above-4-300-0-800-800_g.jpg"
+            ]
         },
         {
             "id": "23",
-            "name": "Пуфик для питомца",
+            "name": "Medor dog leash",
             "category": "Hermes",
-            "price": 5450,
+            "price": 870,
             "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://assets.hermes.com/is/image/hermesproduct/patapouf-dog-bed-large-model--800688E%2001-front-wm-2-0-0-800-800_g.jpg"
+            "image": "https://assets.hermes.com/is/image/hermesproduct/medor-dog-leash--079811CJ3O-front-2-300-0-800-800_g.jpg",
+            "additionalImages": [
+                "https://assets.hermes.com/is/image/hermesproduct/medor-dog-leash--079811CJ3O-worn-1-0-0-800-800_g.jpg"
+            ]
         },
         {
             "id": "24",
-            "name": "Сумка для питомца",
+            "name": "Patapouf dog bed, large model",
             "category": "Hermes",
-            "price": 2675,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://assets.hermes.com/is/image/hermesproduct/carrying-bag-for-dogs--800639EK01-front-2-300-0-800-800_g.jpg"
+            "price": 5450,
+            "description": "As the latest addition to the Dog collection, this leather dog bed for our four-legged friends will fit perfectly in your living room, right next to the House's sofas. Comfortable and made with a resistant leather, this piece showcases the saddle-making expertise which is emblematic of Hermès.",
+            "image": "https://assets.hermes.com/is/image/hermesproduct/patapouf-dog-bed-large-model--800688E%2001-front-wm-2-0-0-800-800_g.jpg",
+            "additionalImages": [
+                "https://assets.hermes.com/is/image/hermesproduct/patapouf-dog-bed-large-model--800688E%2001-worn-1-0-0-800-800_g.jpg",
+                "https://assets.hermes.com/is/image/hermesproduct/patapouf-dog-bed-large-model--800688E%2001-detail-wm-4-0-0-800-800_g.jpg"
+            ]
         },
         {
             "id": "25",
-            "name": "Одеяло для питомца",
+            "name": "Dog brush",
             "category": "Hermes",
-            "price": 580,
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos corporis, temporibus atque voluptatem minus, aliquam sit nam ipsa nemo animi fuga! Alias pariatur cum libero?",
-            "image": "https://assets.hermes.com/is/image/hermesproduct/rocabar-blanket-large-model--800511E%2001-flat-1-300-0-800-800_g.jpg"
+            "price": 120,
+            "description": "Dog brush in beechwood with stainless steel pins, inspired by the mini horse brush. Can be used alongside dog care products, to detangle your dog's coat",
+            "image": "https://assets.hermes.com/is/image/hermesproduct/dog-brush--800657E%2000-worn-3-0-0-800-800_g.jpg",
+            "additionalImages": [
+                "https://assets.hermes.com/is/image/hermesproduct/dog-brush--800657E%2000-worn-2-0-0-800-800_g.jpg",
+                "https://assets.hermes.com/is/image/hermesproduct/dog-brush--800657E%2000-worn-1-0-0-800-800_g.jpg"
+            ]
+        },
+        {
+            "id": "26",
+            "name": "Carrying bag for dogs",
+            "category": "Hermes",
+            "price": 2675,
+            "description": "The Hermès canine collection follows fashions as well as time periods. In the 19th century, designers played with materials, colors and motifs to create collars suited for the town, races or hunts. Today, this updated collection takes inspiration from the equestrian world. It features codes and craftsmanship, including full grain leather and saddle stitch, to accompany the rider's second best friend.",
+            "image": "https://assets.hermes.com/is/image/hermesproduct/carrying-bag-for-dogs--800639EK01-front-2-300-0-800-800_g.jpg",
+            "additionalImages": [
+                "https://assets.hermes.com/is/image/hermesproduct/carrying-bag-for-dogs--800639EK01-side-5-300-0-800-800_g.jpg",
+                "https://assets.hermes.com/is/image/hermesproduct/carrying-bag-for-dogs--800639EK01-side-4-300-0-800-800_g.jpg",
+                "https://assets.hermes.com/is/image/hermesproduct/carrying-bag-for-dogs--800639EK01-side-6-300-0-1600-1600-q99_g.jpg",
+                "https://assets.hermes.com/is/image/hermesproduct/carrying-bag-for-dogs--800639EK01-above-7-300-0-1600-1600-q99_g.jpg",
+                "https://assets.hermes.com/is/image/hermesproduct/carrying-bag-for-dogs--800639EK01-worn-1-0-0-1600-1600-q99_g.jpg"
+            ]
+        },
+        {
+            "id": "27",
+            "name": "Rocabar blanket",
+            "category": "Hermes",
+            "price": 450,
+            "description": "Inspired by the blankets used on racehorses in the 19th century, the Rocabar motif first appeared on an ocher-colored woolen blanket with navy blue and coral stripes. Since then, variations have been produced in wool, cashmere and silk. The motif elegantly adorns the rider, as well as their horse and dog.",
+            "image": "https://assets.hermes.com/is/image/hermesproduct/rocabar-blanket-small-model--800510E%2001-flat-2-300-0-800-800_g.jpg",
+            "additionalImages": [
+                "https://assets.hermes.com/is/image/hermesproduct/rocabar-blanket-small-model--800510E%2001-folded-3-300-0-800-800_g.jpg",
+                "https://assets.hermes.com/is/image/hermesproduct/rocabar-blanket-small-model--800510E%2001-worn-1-0-0-800-800_g.jpg"
+            ]
+        },
+        {
+            "id": "28",
+            "name": "Cavaletti doghouse",
+            "category": "Hermes",
+            "price": 2375,
+            "description": "The Hermès canine collection follows fashions as well as time periods. In the 19th century, designers played with materials, colors and motifs to create collars suited for the town, races or hunts. Today, this updated collection takes inspiration from the equestrian world. It features codes and craftsmanship, including full grain leather and saddle stitch, to accompany the rider's second best friend.",
+            "image": "https://assets.hermes.com/is/image/hermesproduct/cavaletti-doghouse--800543E%2001-front-2-300-0-1600-1600-q99_g.jpg",
+            "additionalImages": [
+                "https://assets.hermes.com/is/image/hermesproduct/cavaletti-doghouse--800543E%2001-front-6-300-0-1600-1600-q99_g.jpg",
+                "https://assets.hermes.com/is/image/hermesproduct/cavaletti-doghouse--800543E%2001-worn-1-0-0-1600-1600-q99_g.jpg"
+            ]
         }
     ]
 }
