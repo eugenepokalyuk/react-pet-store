@@ -104,12 +104,26 @@ const HomePage: FC<HomePageProps> = ({ forwardRef }) => {
                 <ProductList products={remainingProducts} />
             </article>
 
-            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard3})` }} />
-            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard5})` }} />
-            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard2})` }} />
-            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard6})` }} />
-            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard4})` }} />
-            <article className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard})` }} />
+            <article className='hidden md:block'>
+                <div className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard3})` }} />
+                <div className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard5})` }} />
+                <div className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard2})` }} />
+                <div className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard6})` }} />
+                <div className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard4})` }} />
+                <div className="bg-fixed w-full h-screen bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard})` }} />
+            </article>
+
+            <article className='block md:hidden'>
+                <div className="snap-y snap-mandatory h-screen overflow-scroll">
+                    <div className="snap-start bg-amber-200 w-screen h-screen flex items-center justify-center text-8xl bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard3})` }} />
+                    <div className="snap-start bg-amber-200 w-screen h-screen flex items-center justify-center text-8xl bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard5})` }} />
+                    <div className="snap-start bg-amber-200 w-screen h-screen flex items-center justify-center text-8xl bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard2})` }} />
+                    <div className="snap-start bg-amber-200 w-screen h-screen flex items-center justify-center text-8xl bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard6})` }} />
+                    <div className="snap-start bg-amber-200 w-screen h-screen flex items-center justify-center text-8xl bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard4})` }} />
+                    <div className="snap-start bg-amber-200 w-screen h-screen flex items-center justify-center text-8xl bg-no-repeat md:block bg-center bg-cover" style={{ backgroundImage: `url(${Billboard})` }} />
+                </div>
+            </article>
+
         </section>
     );
 };
