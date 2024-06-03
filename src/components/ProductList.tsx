@@ -8,7 +8,7 @@ interface ProductListProps {
 
 const ProductList: React.FC<ProductListProps> = ({ products }) => {
     return (
-        <ul className='grid grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 max-sm:grid-cols-1 gap-2'>
+        <ul className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2'>
             {products.map((product, index) => (
                 <li key={index} className='p-2'>
                     <ProductCard product={product} />
