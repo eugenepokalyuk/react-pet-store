@@ -1,8 +1,14 @@
-import { motion } from 'framer-motion';
-import React, { useState } from 'react';
+import {FC, useState} from 'react';
+import {motion} from 'framer-motion';
+
 import RunningCat from '../assets/animated/running-cat.gif';
 
-const ImageCarousel: React.FC<{ images: string[], alt?: string }> = ({ images, alt }) => {
+interface Props {
+    images:string[],
+    alt?:string
+}
+
+const ImageCarousel:FC<Props> = ({ images, alt }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isLoading, setIsLoading] = useState(true);
 
@@ -27,7 +33,7 @@ const ImageCarousel: React.FC<{ images: string[], alt?: string }> = ({ images, a
                     className="block bg-gray-200 w-full h-[40vh] md:h-[80vh] rounded-lg object-cover flex items-center justify-center"
                 >
                     <div>
-                        <img src={RunningCat} alt="" className='w-[100px] h-auto' />
+                        <img src={RunningCat} alt="" className='w-[100px] h-auto'/>
                     </div>
                 </div>
             )}

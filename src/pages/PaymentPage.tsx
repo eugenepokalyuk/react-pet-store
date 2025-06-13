@@ -1,25 +1,25 @@
-import { Card } from "@radix-ui/themes";
-import { motion } from "framer-motion";
-import { FC, useState } from "react";
-import { Link } from "react-router-dom";
-import { calculateTotal, groupCartItems } from "../components/CartWidget";
-import { useAppDispatch, useAppSelector } from "../hooks";
-import { clearCart } from "../store/actions/actions";
+import {ChangeEvent, FC, useState} from "react";
+import {Link} from "react-router-dom";
+import {Card} from "@radix-ui/themes";
+import {motion} from "framer-motion";
 
-interface PaymentPageProps { }
+import {useAppDispatch, useAppSelector} from "../hooks";
+import {calculateTotal, groupCartItems} from "../components/CartWidget";
+import {clearCart} from "../store/actions/actions";
 
-const isValidCardNumber = (cardNumber: string): boolean => {
+const isValidCardNumber = (cardNumber:string):boolean => {
     return /^\d{16}$/.test(cardNumber);
 };
-const isValidCVV = (cvv: string): boolean => {
+const isValidCVV = (cvv:string):boolean => {
     return /^\d{3}$/.test(cvv);
 };
-const isValidExpDate = (expDate: string): boolean => {
+const isValidExpDate = (expDate:string):boolean => {
     return /^(0[1-9]|1[0-2])\/\d{4}$/.test(expDate);
 };
 
-export const PaymentPage: FC<PaymentPageProps> = () => {
+export const PaymentPage:FC = () => {
     const dispatch = useAppDispatch();
+
     const [paymentMethod, setPaymentMethod] = useState<string>("");
     const [email, setEmail] = useState<string>("");
     const [cardNumber, setCardNumber] = useState<string>("");
@@ -27,26 +27,31 @@ export const PaymentPage: FC<PaymentPageProps> = () => {
 
     const cartItems = useAppSelector((state) => state.cart.items);
     const products = useAppSelector((state) => state.products.products);
+
     const groupedItems = groupCartItems(cartItems, products); // Исправленный вызов
     const total = calculateTotal(groupedItems);
 
-    const handlePaymentMethodChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handlePaymentMethodChange = (e:ChangeEvent<HTMLInputElement>) => {
         setPaymentMethod(e.target.value);
     };
 
-    const handleCardNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleCardNumberChange = (e:ChangeEvent<HTMLInputElement>) => {
         setCardNumber(e.target.value);
     };
 
     const handlePayment = () => {
         if (!email) {
             alert("Please enter your email");
+
             return;
         }
+
         if (!paymentMethod) {
             alert("Please select a payment method");
+
             return;
         }
+
         if (paymentMethod === "online") {
             const cardNumberInput = document.getElementById("card_number") as HTMLInputElement;
             const expDateInput = document.getElementById("exp_date") as HTMLInputElement;
@@ -54,18 +59,25 @@ export const PaymentPage: FC<PaymentPageProps> = () => {
 
             if (!isValidCardNumber(cardNumberInput.value)) {
                 alert("Please enter a valid card number (16 digits)");
+
                 return;
             }
+
             if (!isValidCVV(cvvInput.value)) {
                 alert("Please enter a valid CVV (3 digits)");
+
                 return;
             }
+
             if (!isValidExpDate(expDateInput.value)) {
                 alert("Please enter a valid expiration date (MM/YYYY)");
+
                 return;
             }
         }
+
         dispatch(clearCart());
+
         setIsPaymentComplete(true);
     };
 
@@ -74,7 +86,9 @@ export const PaymentPage: FC<PaymentPageProps> = () => {
             {isPaymentComplete ? (
                 <div className="p-4">
                     <h1 className="text-2xl">Thank you for your order!</h1>
+
                     <p className="mb-4">Your order has been successfully placed.</p>
+
                     <Link to="/" className="bg-[#3b444b]/80 text-white px-4 py-2 rounded mt-4">Continue Shopping</Link>
                 </div>
             ) : (
@@ -127,7 +141,8 @@ export const PaymentPage: FC<PaymentPageProps> = () => {
                                                         onChange={handlePaymentMethodChange}
                                                         required
                                                     />
-                                                    <label htmlFor="online" className="inline-flex items-center justify-between w-full px-4 py-2 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer peer-checked:border-[#3b444b] peer-checked:text-[#3b444b] hover:text-gray-600 hover:bg-gray-100">
+                                                    <label htmlFor="online"
+                                                           className="inline-flex items-center justify-between w-full px-4 py-2 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer peer-checked:border-[#3b444b] peer-checked:text-[#3b444b] hover:text-gray-600 hover:bg-gray-100">
                                                         <div className="block">
                                                             <div className="w-full text-lg font-semibold">Card</div>
                                                             <div className="w-full">Online payment by card</div>
@@ -144,10 +159,13 @@ export const PaymentPage: FC<PaymentPageProps> = () => {
                                                         className="hidden peer"
                                                         onChange={handlePaymentMethodChange}
                                                     />
-                                                    <label htmlFor="cash" className="inline-flex items-center justify-between w-full px-4 py-2 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer peer-checked:border-[#3b444b] peer-checked:text-[#3b444b] hover:text-gray-600 hover:bg-gray-100">
+                                                    <label htmlFor="cash"
+                                                           className="inline-flex items-center justify-between w-full px-4 py-2 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer peer-checked:border-[#3b444b] peer-checked:text-[#3b444b] hover:text-gray-600 hover:bg-gray-100">
                                                         <div className="block">
                                                             <div className="w-full text-lg font-semibold">Cash</div>
-                                                            <div className="w-full">Payment to the courier upon receipt</div>
+                                                            <div className="w-full">Payment to the courier upon
+                                                                receipt
+                                                            </div>
                                                         </div>
                                                     </label>
                                                 </li>
@@ -162,10 +180,13 @@ export const PaymentPage: FC<PaymentPageProps> = () => {
                                                         onChange={handlePaymentMethodChange}
                                                     />
 
-                                                    <label htmlFor="gift" className="inline-flex items-center justify-between w-full px-4 py-2 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer peer-checked:border-[#3b444b] peer-checked:text-[#3b444b] hover:text-gray-600 hover:bg-gray-100">
+                                                    <label htmlFor="gift"
+                                                           className="inline-flex items-center justify-between w-full px-4 py-2 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer peer-checked:border-[#3b444b] peer-checked:text-[#3b444b] hover:text-gray-600 hover:bg-gray-100">
                                                         <div className="block">
                                                             <div className="w-full text-lg font-semibold">Gift</div>
-                                                            <div className="w-full">Payment to the courier upon receipt</div>
+                                                            <div className="w-full">Payment to the courier upon
+                                                                receipt
+                                                            </div>
                                                         </div>
                                                     </label>
                                                 </li>
@@ -175,7 +196,8 @@ export const PaymentPage: FC<PaymentPageProps> = () => {
                                                     <div className="mb-4">
                                                         <label className="block mb-2">
                                                             <div className="mt-4">
-                                                                <label htmlFor="card_number" className="block text-black mb-1">Email</label>
+                                                                <label htmlFor="card_number"
+                                                                       className="block text-black mb-1">Email</label>
                                                                 <input
                                                                     type="email"
                                                                     id="email"
@@ -188,9 +210,12 @@ export const PaymentPage: FC<PaymentPageProps> = () => {
                                                         </label>
                                                         {paymentMethod === "online" && (
                                                             <div>
-                                                                <h2 className="text-xl font-semibold text-black mb-2">Payment Information</h2>
+                                                                <h2 className="text-xl font-semibold text-black mb-2">Payment
+                                                                    Information</h2>
                                                                 <div className="mt-4">
-                                                                    <label htmlFor="card_number" className="block text-black mb-1">Card Number</label>
+                                                                    <label htmlFor="card_number"
+                                                                           className="block text-black mb-1">Card
+                                                                        Number</label>
                                                                     <input
                                                                         type="text"
                                                                         id="card_number"
@@ -204,7 +229,9 @@ export const PaymentPage: FC<PaymentPageProps> = () => {
 
                                                                 <div className="grid grid-cols-2 gap-4 mt-4">
                                                                     <div>
-                                                                        <label htmlFor="exp_date" className="block text-black mb-1">Expiration Date</label>
+                                                                        <label htmlFor="exp_date"
+                                                                               className="block text-black mb-1">Expiration
+                                                                            Date</label>
                                                                         <input
                                                                             type="text"
                                                                             id="exp_date"
@@ -214,7 +241,8 @@ export const PaymentPage: FC<PaymentPageProps> = () => {
                                                                         />
                                                                     </div>
                                                                     <div>
-                                                                        <label htmlFor="cvv" className="block text-black mb-1">CVV</label>
+                                                                        <label htmlFor="cvv"
+                                                                               className="block text-black mb-1">CVV</label>
                                                                         <input
                                                                             type="text"
                                                                             id="cvv"

@@ -1,11 +1,12 @@
-import { Box } from '@radix-ui/themes';
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { ReactComponent as ShoppingBag } from '../assets/images/shopping-bag.svg';
-import { useAppSelector } from '../hooks';
-import { Product } from '../types';
-import { PAYMENT_PATH } from '../utils/routePath';
+import {useState} from 'react';
+import {Link} from 'react-router-dom';
+import {motion} from 'framer-motion';
+import {Box} from '@radix-ui/themes';
+
+import {Product} from '../types';
+import {useAppSelector} from '../hooks';
+import {PAYMENT_PATH} from '../utils/routePath';
+import {ReactComponent as ShoppingBag} from '../assets/images/shopping-bag.svg';
 
 export const CartWidget = () => {
     const cartItems = useAppSelector((store) => store.cart.items);
@@ -17,7 +18,7 @@ export const CartWidget = () => {
         setIsCartOpen(!isCartOpen);
     };
 
-    const handlePopupClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    const handlePopupClick = (event:React.MouseEvent<HTMLDivElement>) => {
         event.stopPropagation();
     };
 
@@ -28,12 +29,14 @@ export const CartWidget = () => {
             className="fixed bottom-5 right-5 bg-[#3b444b]/50 rounded-full p-4 cursor-pointer"
             onClick={handleCartClick}
         >
-            <ShoppingBag className="w-8 h-8 fill-white/90" />
-            <span className="absolute top-0 right-0 flex justify-center items-center bg-red-500/90 rounded-full w-5 h-5 text-sm text-white">
+            <ShoppingBag className="w-8 h-8 fill-white/90"/>
+            <span
+                className="absolute top-0 right-0 flex justify-center items-center bg-red-500/90 rounded-full w-5 h-5 text-sm text-white">
                 {Object.keys(cartItems).reduce((total, key) => total + cartItems[key], 0)}
             </span>
             {isCartOpen && (
-                <Box onClick={handlePopupClick} className="absolute bottom-20 right-0 mt-12 w-80 bg-white border-2 border-[#3b444b] rounded-lg shadow p-4 cart-widget">
+                <Box onClick={handlePopupClick}
+                     className="absolute bottom-20 right-0 mt-12 w-80 bg-white border-2 border-[#3b444b] rounded-lg shadow p-4 cart-widget">
                     {Object.keys(cartItems).length > 0 ? (
                         <>
                             <ul className='max-h-[400px] overflow-auto'>
@@ -52,7 +55,7 @@ export const CartWidget = () => {
                                 ))}
                             </ul>
                             <div className="mt-4">
-                                <hr />
+                                <hr/>
                                 <div className="flex justify-between">
                                     <span>Итого:</span>
                                     <span>${calculateTotal(groupedItems)}</span>
@@ -79,13 +82,13 @@ export const CartWidget = () => {
 };
 
 export const groupCartItems = (
-    cartItems: { [productId: number]: number },
-    products: Product[]
-): { category: string; items: { id: number; name: string; price: number; quantity: number }[] }[] => {
-    const groupedItems: { category: string; items: { id: number; name: string; price: number; quantity: number }[] }[] = [];
+    cartItems:{ [productId:number]:number },
+    products:Product[]
+):{ category:string; items:{ id:number; name:string; price:number; quantity:number }[] }[] => {
+    const groupedItems:{ category:string; items:{ id:number; name:string; price:number; quantity:number }[] }[] = [];
 
     Object.entries(cartItems).forEach(([itemId, quantity]) => {
-        const item: any = products.find((product: any) => product.id === itemId);
+        const item:any = products.find((product:any) => product.id === itemId);
         if (item) {
             const categoryIndex = groupedItems.findIndex((group) => group.category === item.category);
             if (categoryIndex === -1) {
@@ -104,7 +107,10 @@ export const groupCartItems = (
     return groupedItems;
 };
 
-export const calculateTotal = (groupedItems: { category: string; items: { id: number; name: string; price: number; quantity: number }[] }[]): number => {
+export const calculateTotal = (groupedItems:{
+    category:string;
+    items:{ id:number; name:string; price:number; quantity:number }[]
+}[]):number => {
     let total = 0;
     groupedItems.forEach(group => {
         group.items.forEach(item => {

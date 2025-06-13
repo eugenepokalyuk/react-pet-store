@@ -1,13 +1,11 @@
-import React from 'react';
+import {FC} from 'react';
 
-const ErrorPage: React.FC = () => {
-    return (
-        <main className='container mx-auto'>
-            <section>
-                <h1>Ошибка</h1>
-            </section>
-        </main>
-    );
-};
+const ErrorPage:FC = () => (
+    <main className='container mx-auto'>
+        <section>
+            <h1>Ошибка</h1>
+        </section>
+    </main>
+);
 
 export default ErrorPage;
